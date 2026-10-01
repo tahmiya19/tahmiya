@@ -1,27 +1,11 @@
-def binary_search(arr, target):
-    low = 0
-    high = len(arr) - 1
+public class demo {
+    public static void main(String[] args) {
+        String name = "Tahmiya";
+        int age = 20;
+        int marks = 85;
 
-    while low <= high:
-        mid = (low + high) // 2
-
-        if arr[mid] == target:
-            return mid
-        elif arr[mid] < target:
-            low = mid + 1
-        else:
-            high = mid - 1
-
-    return -1
-
-
-# Example
-arr = [10, 20, 30, 40, 50, 60, 70]
-target = 40
-
-result = binary_search(arr, target)
-
-if result != -1:
-    print("Element found at index:", result)
-else:
-    print("Element not found")
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Marks: " + marks);
+    }
+}
